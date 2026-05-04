@@ -5,7 +5,8 @@
 			"api_base_url": "https://openrouter.ai/api/v1/chat/completions",
 			"api_key": "$OPEN_ROUTER_API_KEY",
 			"models": [
-				"google/gemini-2.5-flash-lite"
+				"google/gemini-2.5-flash-lite",
+				"google/gemini-2.5-flash"
 			],
 			"transformer": {
 				"use": [
@@ -17,11 +18,11 @@
 	"Router": {
 		"default": "openrouter,google/gemini-2.5-flash-lite",
 		"background": "openrouter,google/gemini-2.5-flash-lite",
-		"think": "openrouter,google/gemini-2.5-flash-lite",
-		"longContext": "openrouter,google/gemini-2.5-flash-lite",
+		"think": "openrouter,google/gemini-2.5-flash",
+		"longContext": "openrouter,google/gemini-2.5-flash",
 		"longContextThreshold": 60000,
 		"webSearch": "openrouter,google/gemini-2.5-flash-lite",
-		"image": "openrouter,google/gemini-2.5-flash-lite"
+		"image": "openrouter,google/gemini-2.5-flash"
 	},
 	"LOG": true,
 	"HOST": "127.0.0.1"
