@@ -1,0 +1,5 @@
+logs/
+plugins/
+.claude-code-router.pid
+
+.env
