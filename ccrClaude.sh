@@ -7,5 +7,5 @@ pkill -f "ccr start" || true
 sleep 1
 
 echo "Starting ccr..."
-export $(cat ~/.claude-code-router/.env | xargs) 2>/dev/null
+source ~/.claude-code-router/./setAllexport.sh ~/.claude-code-router/.env
 ccr start & sleep 3 && ccr code

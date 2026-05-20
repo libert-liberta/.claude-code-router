@@ -1,0 +1,28 @@
+{
+	"Providers": [
+		{
+			"name": "openrouter",
+			"api_base_url": "https://openrouter.ai/api/v1/chat/completions",
+			"api_key": "$OPEN_ROUTER_API_KEY",
+			"models": [
+				"~anthropic/claude-sonnet-latest"
+			],
+			"transformer": {
+				"use": [
+					"openrouter"
+				]
+			}
+		}
+	],
+	"Router": {
+		"default": "openrouter,~anthropic/claude-sonnet-latest",
+		"background": "openrouter,~anthropic/claude-sonnet-latest",
+		"think": "openrouter,~anthropic/claude-sonnet-latest",
+		"longContext": "openrouter,~anthropic/claude-sonnet-latest",
+		"longContextThreshold": 60000,
+		"webSearch": "openrouter,~anthropic/claude-sonnet-latest",
+		"image": "openrouter,~anthropic/claude-sonnet-latest"
+	},
+	"LOG": true,
+	"HOST": "127.0.0.1"
+}
