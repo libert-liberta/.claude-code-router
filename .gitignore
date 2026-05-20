@@ -1,5 +1,8 @@
-logs/
-plugins/
-.claude-code-router.pid
-
-.env
+*
+!ccrClaude.sh
+!chownmodClaude.sh
+!.env.sample
+!config.sample.claude.json
+!config.sample.gemini.json
+!setAllexport.sh
+!README.md
